@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+	int c1=0,c2=0,i;
+	char arr[20],z,o;
+	scanf("%s", &arr);
+	i=sizeof(arr);
+	for(i=0;i<=20;i++)
+	{
+		if(arr[i]=='z')
+		{
+			c1++;
+		}
+	}     
+	for(i=0;i<=20;i++)
+	{
+	    if(arr[i]=='o')
+	    {
+	        c2++;
+	    }
+	}// Reading input from STDIN
+	if (2 * c1 == c2)
+	{
+		printf("Yes");
+	}
+	else
+	{
+		printf("No");
+	}      // Writing output to STDOUT
+}
